@@ -1,6 +1,6 @@
 namespace CoffeeShopConsoleAppNet60;
 
-public class BlackCoffee : Coffee
+public class BlackCoffee(int discount) : Coffee(discount)
 {
     public override string Strength()
     {

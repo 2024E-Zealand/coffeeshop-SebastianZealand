@@ -1,10 +1,15 @@
 namespace CoffeeShopConsoleAppNet60;
 
-public class Latte : Coffee, IMilk
+public class Latte(int discount) : Coffee(discount), IMilk
 {
     public int Price()
     {
-        return 40;
+        if (discount > 5)
+        {
+            throw new Exception("You cannot have a price of more than 5 kroner.");
+        }
+        
+        return 40 - discount;
     }
 
     public override string Strength()
