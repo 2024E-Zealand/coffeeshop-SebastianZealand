@@ -16,4 +16,9 @@ public class Cortado : Coffee, IMilk
     {
         return 40;
     }
+
+    public override string ToString()
+    {
+        return $"Price: {Price()}, Strength is {Strength()}";
+    }
 }

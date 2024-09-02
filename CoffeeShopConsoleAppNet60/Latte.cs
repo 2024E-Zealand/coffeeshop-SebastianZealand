@@ -16,4 +16,9 @@ public class Latte : Coffee, IMilk
     {
         return 200;
     }
+
+    public override string ToString()
+    {
+        return $"Price: {Price()}, Strength: {Strength()}";
+    }
 }

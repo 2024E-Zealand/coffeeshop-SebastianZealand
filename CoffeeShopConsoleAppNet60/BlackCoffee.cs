@@ -6,4 +6,9 @@ public class BlackCoffee : Coffee
     {
         return "Strong";
     }
+    
+    public override string ToString()
+    {
+        return $"{base.ToString()}, Strength: {Strength()}";
+    }
 }

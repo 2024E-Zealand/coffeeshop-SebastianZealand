@@ -8,4 +8,9 @@ public abstract class Coffee
     }
 
     public abstract string Strength();
+
+    public override string ToString()
+    {
+        return $"Price: {Price()}";
+    }
 }
