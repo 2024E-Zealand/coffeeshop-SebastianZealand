@@ -1,6 +1,6 @@
 namespace CoffeeShopConsoleAppNet60;
 
-public class Cortado : Coffee
+public class Cortado : Coffee, IMilk
 {
     public int Price()
     {
@@ -10,5 +10,10 @@ public class Cortado : Coffee
     public override string Strength()
     {
         return "Medium";
+    }
+
+    public int MlMilk()
+    {
+        return 40;
     }
 }

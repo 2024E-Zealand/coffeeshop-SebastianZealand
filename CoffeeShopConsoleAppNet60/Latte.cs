@@ -1,6 +1,6 @@
 namespace CoffeeShopConsoleAppNet60;
 
-public class Latte : Coffee
+public class Latte : Coffee, IMilk
 {
     public int Price()
     {
@@ -10,5 +10,10 @@ public class Latte : Coffee
     public override string Strength()
     {
         return "Weak";
+    }
+
+    public int MlMilk()
+    {
+        return 200;
     }
 }
