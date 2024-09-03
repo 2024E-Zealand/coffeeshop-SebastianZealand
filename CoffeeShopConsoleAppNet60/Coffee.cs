@@ -4,7 +4,7 @@ public abstract class Coffee(int discount)
 {
     public int Discount { get; private set; } = discount;
 
-    public int Price()
+    public virtual int Price()
     {
         if (discount > 5)
         {

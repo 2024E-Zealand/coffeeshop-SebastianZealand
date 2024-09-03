@@ -7,7 +7,7 @@ class Program
         BlackCoffee blackCoffee = new BlackCoffee(0);
         Latte latte = new Latte(0);
         Cortado cortado = new Cortado(0);
-
+        
         List<Coffee> coffees = new List<Coffee>();
         
         coffees.Add(blackCoffee);

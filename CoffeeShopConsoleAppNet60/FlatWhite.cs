@@ -2,7 +2,7 @@ namespace CoffeeShopConsoleAppNet60;
 
 public class FlatWhite(int discount) : Coffee(discount)
 {
-    public int Price()
+    public override int Price()
     {
         if (discount > 5)
         {
@@ -11,7 +11,7 @@ public class FlatWhite(int discount) : Coffee(discount)
         
         return 30 - Discount;
     }
-    
+        
     public override string Strength()
     {
         return "Medium";
@@ -19,6 +19,6 @@ public class FlatWhite(int discount) : Coffee(discount)
 
     public override string ToString()
     {
-        return $"Price: {Price()}, Strenght: {Strength()}";
+        return $"Price: {Price()}, Strength: {Strength()}";
     }
 }

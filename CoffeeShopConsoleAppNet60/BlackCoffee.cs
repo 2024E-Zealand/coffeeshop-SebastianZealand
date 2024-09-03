@@ -6,6 +6,11 @@ public class BlackCoffee(int discount) : Coffee(discount)
     {
         return "Strong";
     }
+
+    public BlackCoffee(): this(0)
+    {
+        
+    }
     
     public override string ToString()
     {

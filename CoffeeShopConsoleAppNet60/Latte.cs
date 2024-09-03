@@ -2,7 +2,7 @@ namespace CoffeeShopConsoleAppNet60;
 
 public class Latte(int discount) : Coffee(discount), IMilk
 {
-    public int Price()
+    public override int Price()
     {
         if (discount > 5)
         {
